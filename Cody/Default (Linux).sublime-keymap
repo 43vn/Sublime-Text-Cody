@@ -1,0 +1,4 @@
+[
+  { "keys": ["ctrl+shift+insert"], "command": "cody_gen" },
+  { "keys": ["ctrl+shift+end"], "command": "cody_edit" },
+]

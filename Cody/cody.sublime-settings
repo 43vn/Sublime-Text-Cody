@@ -1,0 +1,18 @@
+{
+    "api_key": "<lấy access tokens bỏ vào - Settings - Access tokens https://sourcegraph.com/users/>",
+    "max_seconds": 120,
+    "max_tokens": 32000,
+    "completions": {
+        "model": "anthropic::2024-10-22::claude-3-7-sonnet-latest",
+        "temperature": 0.3,
+        "top_p": 1,
+        "keep_prompt_text": true,
+        "prompt": "You are a senior DevOps engineer. Respond with only the required shell script, server configuration, or code block. Do not include any markdown syntax, explanations, or conversational text. Also, do not add any leading or trailing blank lines."
+    },
+    "edits": {
+        "model": "anthropic::2024-10-22::claude-3-7-sonnet-latest",
+        "temperature": 0.3,
+        "top_p": 1,
+        "prompt": "You are a senior DevOps engineer. Refactor or edit code/config as requested. Respond with code only — no markdown, no explanation, no chat."
+    },
+}

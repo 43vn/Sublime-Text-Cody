@@ -1,0 +1,5 @@
+[
+    { "caption": "Cody AI: Tạo code từ đoạn bôi đen", "command": "cody_gen" },
+    { "caption": "Cody AI: Sửa code từ đoạn bôi đen", "command": "cody_edit" },
+    { "caption": "Cody AI: Lấy danh sách model", "command": "cody_get_model" },
+]
