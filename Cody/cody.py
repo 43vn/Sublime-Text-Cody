@@ -121,6 +121,7 @@ class CodyEditCommand(CodyCommand):
         settings = sublime.load_settings('cody.sublime-settings')
         settingse = settings.get('edits')
         region = self.view.sel()[0]
+        selected_code = self.view.substr(region)
         messages = [
             {"role": "assistant", "content": settingse.get('prompt', "You are a senior DevOps engineer. Refactor or edit code/config as requested. Respond with code only — no markdown, no explanation, no chat.")},
             {"role": "user", "content": "{}\n\n{}".format(instruction, selected_code)}
